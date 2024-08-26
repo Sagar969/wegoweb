@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #fff; /* White */
+    --foreground: #2c3e50; /* Dark Blue-Grey */
+    --card: #ffffff; /* White */
+    --card-foreground: #2c3e50; /* Dark Blue-Grey */
+    --popover: #ffffff; /* White */
+    --popover-foreground: #2c3e50; /* Dark Blue-Grey */
+    --primary: #1e90ff; /* Dodger Blue */
+    --primary-foreground: #f0f8ff; /* Alice Blue */
+    --secondary: #b0e57c; /* Light Green */
+    --secondary-foreground: #2e8b57; /* Sea Green */
+    --muted: #b0e57c; /* Light Green */
+    --muted-foreground: #2f4f4f; /* Dark Slate Gray */
+    --accent: #b0e57c; /* Light Green */
+    --accent-foreground: #2e8b57; /* Sea Green */
+    --destructive: #ff6347; /* Tomato */
+    --destructive-foreground: #f0f8ff; /* Alice Blue */
+    --border: #dcdcdc; /* Gainsboro */
+    --input: #dcdcdc; /* Gainsboro */
+    --ring: #1e90ff; /* Dodger Blue */
+    --radius: 0.4rem;
+  }
+
+  .dark {
+    --background: #2c3e50; /* Dark Blue-Grey */
+    --foreground: #f0f8ff; /* Alice Blue */
+    --card: #2c3e50; /* Dark Blue-Grey */
+    --card-foreground: #f0f8ff; /* Alice Blue */
+    --popover: #2c3e50; /* Dark Blue-Grey */
+    --popover-foreground: #f0f8ff; /* Alice Blue */
+    --primary: #1e90ff; /* Dodger Blue */
+    --primary-foreground: #f0f8ff; /* Alice Blue */
+    --secondary: #2e8b57; /* Sea Green */
+    --secondary-foreground: #f0f8ff; /* Alice Blue */
+    --muted: #2e8b57; /* Sea Green */
+    --muted-foreground: #a9a9a9; /* Dark Gray */
+    --accent: #2e8b57; /* Sea Green */
+    --accent-foreground: #f0f8ff; /* Alice Blue */
+    --destructive: #ff6347; /* Tomato */
+    --destructive-foreground: #f0f8ff; /* Alice Blue */
+    --border: #2e8b57; /* Sea Green */
+    --input: #2e8b57; /* Sea Green */
+    --ring: #87ceeb; /* Sky Blue */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    @apply text-base;
+  }
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 0;
+}
